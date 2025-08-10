@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الحملات - عطاء الجمعية الخيرية</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/yourkit.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Responsive Navbar -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 bg-white text-black "
+    >
+      <nav class="flex items-center justify-between px-4 md:px-8 lg:px-12 w-full ">
+        <img
+          src="image/Untitled-1.png"
+          alt="logo"
+          class="w-16 h-16 md:w-18 md:h-18"
+        />
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="index.html"
+            class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >الصفحه الرئيسية</a
+          >
+          <a href="donation.html" class="text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors">
+            الحملات</a
+          >
+          <a href="about.html" class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >عن المنظمة</a
+          >
+          <a href="contact.html" class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >اتصل بينا</a
+          >
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="donation.html"
+            class="bg-[#45A21C] hover:bg-[#3b7224] px-5 py-2 rounded-xl text-white text-sm font-medium transition-colors"
+            >انضم الينا</a
+          >
+        </div>
+        <!-- Hamburger -->
+        <button id="nav-toggle" class="md:hidden text-3xl focus:outline-none">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+     <div
+        id="mobile-menu"
+        class="md:hidden fixed top-0 left-0 w-full h-full bg-[#F8F9FA] text-[#45A21C] flex flex-col items-center justify-center space-y-8 text-2xl hidden z-40"
+      >
+        <button id="nav-close" class="absolute top-6 right-8 text-4xl">
+          <i class="bx bx-x"></i>
+        </button>
+        <a href="index.html" class="hover:text-gray-200 transition-colors"
+          >الصفحه الرئيسية</a
+        >
+        <a href="donation.html" class="hover:text-gray-200 transition-colors">
+          الحملات</a
+        >
+        <a href="about.html" class="hover:text-gray-200 transition-colors"
+          >عن المنظمة</a
+        >
+        <a href="contact.html" class="hover:text-gray-200 transition-colors"
+          >اتصل بينا</a
+        >
+        <div class="mt-8">
+          <a
+            href="donation.html"
+            class="bg-[#45A21C] text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-100 transition-colors"
+          >
+            انضم الينا
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="relative h-96 md:h-110 bg-cover bg-center"
+      style="
+        background-image: url('./image/untitled-2.png');
+      "
+    >
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div
+        class="relative z-10 container mx-auto h-full flex flex-col justify-center items-start px-4 md:px-6 lg:px-8 space-y-6 md:space-y-8 text-white"
+      >
+        <h1 class="text-3xl md:text-5xl lg:text-7xl font-bold leading-tight md:leading-snug hero-title">
+          تبرع اليوم: أنقذ حياة
+        </h1>
+        <p class="mt-4 text-base md:text-lg max-w-xl text-gray-300 hero-subtitle">
+          في عالم يمتلئ بالتحديات، نؤمن أن التبرع ليس مجرد مال يُعطى، بل هو حياة تُمنَح،
+           وكرامة تُستعاد، وأمل يُزرع من جديد في قلوب أنهكتها الحاجة
+        </p>
+    
+      </div>
+    </section>
+
+    <section
+      class="mx-auto px-4 md:px-8 lg:px-16 py-8 md:py-16 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 bg-[#F8F9FA]"
+    >
+      <div class="flex flex-col space-y-6 text-center items-center bg-[#FFFFFF] shadow-md rounded-lg p-6 h-48 w-full md:w-auto card-animate">
+        <img src="image/Vector1.png" alt="" class="w-12 h-12 md:w-14 md:h-14" />
+        <div class="flex flex-col items-center space-y-1">
+          <h1 class="font-bold text-lg md:text-2xl">بناء المساجد</h1>
+          <p class="text-gray-600 text-sm md:text-base">نبني بيوتًا لله في القرى</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-6 text-center items-center bg-[#FFFFFF] shadow-md rounded-lg p-6 h-48 w-full md:w-auto">
+        <img src="image/Vector2.png" alt="" class="w-12 h-12 md:w-14 md:h-14" />
+        <div class="flex flex-col items-center space-y-1">
+          <h1 class="font-bold text-lg md:text-2xl">الرعاية الصحية</h1>
+          <p class="text-gray-600 text-sm md:text-base">ندعم علاج المرضى غير القادرين</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-6 text-center items-center bg-[#FFFFFF] shadow-md rounded-lg p-6 h-48 w-full md:w-auto">
+        <img src="image/Vector3.png" alt="" class="w-12 h-12 md:w-14 md:h-14" />
+        <div class="flex flex-col items-center space-y-1">
+          <h1 class="font-bold text-lg md:text-2xl">الزكاة والصدقات</h1>
+          <p class="text-gray-600 text-sm md:text-base">نوصّل عطائك لمن يستحقه</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-6 text-center items-center bg-[#FFFFFF] shadow-md rounded-lg p-6 h-48 w-full md:w-auto">
+        <img src="image/Vector4.png" alt="" class="w-12 h-12 md:w-14 md:h-14" />
+        <div class="flex flex-col items-center space-y-1">
+          <h1 class="font-bold text-lg md:text-2xl">تعليم</h1>
+          <p class="text-gray-600 text-sm md:text-base">
+            فرص تعليمية للأطفال والشباب <br />المحتاجين
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Header -->
+    <section class="my-16 md:my-32 py-12 md:py-16">
+      <div class="container mx-auto px-4 md:px-6 rtl:text-right">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-10 gap-4">
+          <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">أحدث حالات التبرع</h2>
+          <a
+            href="#"
+            class="border border-black text-black px-4 py-2 rounded hover:bg-black hover:text-white transition-colors text-sm md:text-base"
+            >عرض المزيد من الحالات</a
+          >
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden card-animate">
+            <img
+              src="image/joel-muniz-A4Ax1ApccfA-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">سلة غذاء لأسرة فقيرة</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+                نوفر سلات غذائية متكاملة للأسر الأكثر احتياجًا في المناطق
+                الريفية
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+               
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">14</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/nils-huenerfuerst-S6xwgXRpg3U-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2"> علاج مريض بالسرطان</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+              نساعد في تغطية تكاليف العلاج لطفل يعاني من سرطان الدم ويحتاج إلى  
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 22,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 10,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">22</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/larm-rmah-AEaTUnvneik-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">كفالة يتيم</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+               نسعى لتوفير احتياجات الأيتام من مأكل وملبس وتعليم في بيئة آمنة ومحبة.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+               
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 17,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 5,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">10</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/images.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">توفير بطاطين للشتاء</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+               نوزع بطاطين وملابس شتوية على الأسر المحتاجة قبل موجات البرد.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+               
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">22</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/bill-wegener-8ldqRkOk5oo-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">دعم لاجئين</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+                نقدم خدمات طبية وغذائية عاجلة للاجئين في ظروف إنسانية صعبة.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">10</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/d64Tw.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">ترميم منازل متهالكة</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+                مشروع لترميم منازل غير صالحة للسكن في القرى الأشد فقرًا.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">14</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/d64Tw.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">ترميم منازل متهالكة</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+                مشروع لترميم منازل غير صالحة للسكن في القرى الأشد فقرًا.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">14</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+          <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/bill-wegener-8ldqRkOk5oo-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2">دعم لاجئين</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+                نقدم خدمات طبية وغذائية عاجلة للاجئين في ظروف إنسانية صعبة.
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 12,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">10</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+
+           <!-- Card Item -->
+          <div class="bg-white shadow-xl rounded-2xl overflow-hidden">
+            <img
+              src="image/nils-huenerfuerst-S6xwgXRpg3U-unsplash.jpg"
+              alt=" lasted"
+              class="w-full h-48 md:h-60 object-cover"
+            />
+            <div class="p-4 md:p-6">
+              <h3 class="text-lg md:text-xl lg:text-2xl font-bold mb-2"> علاج مريض بالسرطان</h3>
+              <p class="text-sm text-gray-500 mb-4 leading-relaxed">
+               نساعد في تغطية تكاليف العلاج لطفل يعاني من سرطان الدم ويحتاج إلى دعم عاجل
+              </p>
+
+              <!-- Progress Bar -->
+              <div class="mb-3">
+                
+                  <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+                <div class="flex flex-col md:flex-row justify-between my-4 gap-2">
+                  <div class="flex flex-col items-start">
+                    <h4 class="font-bold text-sm md:text-base">الهدف: 22,000 جنيه</h4>
+                    <p class="text-xs md:text-sm text-gray-500">تم جمعه: 10,000 جنيه</p>
+                  </div>
+                  <div class="flex items-center flex-col">
+                    <h4 class="font-bold text-sm md:text-base">22</h4>
+                    <p class="text-xs md:text-sm text-gray-500">عدد التبرعات</p>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="details.html"
+                class="block w-full text-center bg-black text-white py-2 rounded hover:bg-gray-800 transition-colors text-sm md:text-base"
+                >عرض التفاصيل</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-8 md:py-10">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 text-center md:text-right">
+    
+    <!-- About Section -->
+    <div class="mb-6 md:mb-0">
+      <img src="image/Untitled-1.png" alt="" class="w-16 h-16 md:w-20 md:h-20 mx-auto md:mx-0 mb-4">
+      <p class="text-sm leading-relaxed">
+        الجمعية الخيرية "عطاء"<br>
+        نحن نسعى لإحداث أثر حقيقي في حياة المحتاجين من خلال التبرعات والعمل التطوعي.
+      </p>
+      <p class="mt-4 text-sm">
+        📞 الهاتف: 0000-000-0100<br>
+        📍 العنوان: القاهرة، مصر
+      </p>
+    </div>
+
+    <!-- من نحن -->
+    <div class="mb-6 md:mb-0">
+      <h3 class="text-lg font-semibold mb-4">من نحن</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="donation.html" class="hover:underline transition-colors">الحملات</a></li>
+        <li><a href="#" class="hover:underline transition-colors">المتطوعين</a></li>
+        <li><a href="#" class="hover:underline transition-colors">رؤيتنا</a></li>
+        <li><a href="#" class="hover:underline transition-colors">الأسئلة الشائعة</a></li>
+        <li><a href="#" class="hover:underline transition-colors">الأخبار</a></li>
+      </ul>
+    </div>
+
+    <!-- روابط سريعة -->
+    <div class="mb-6 md:mb-0">
+      <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:underline transition-colors">سياسة الخصوصية</a></li>
+        <li><a href="#" class="hover:underline transition-colors">الشروط والأحكام</a></li>
+        <li><a href="#" class="hover:underline transition-colors">التقارير</a></li>
+        <li><a href="#" class="hover:underline transition-colors">الخدمات</a></li>
+        <li><a href="#" class="hover:underline transition-colors">المشاريع القادمة</a></li>
+      </ul>
+    </div>
+
+    <!-- الحالات المصورة -->
+    <div class="mb-6 md:mb-0">
+      <h3 class="text-lg font-semibold mb-4">الحالات المصورة</h3>
+      <div class="grid grid-cols-3 gap-2 justify-center">
+        <img src="image/close-up-of-people-arranging-ite.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+        <img src="image/close-up-of-female-hands-holding.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+        <img src="image/joel-muniz-A4Ax1ApccfA-unsplash.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+        <img src="image/premium_photo-1661962420671-9fcd.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+        <img src="image/premium_photo-1663047044538-399e.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+        <img src="image/images.jpg" class="w-full h-12 md:h-16 object-cover rounded" alt="">
+      </div>
+    
+    </div>
+  </div>
+
+  <!-- Copyright -->
+   <div class="flex flex-col md:flex-row justify-between items-center mt-8 md:mt-10 px-4 md:px-16 py-6 md:py-10 gap-4">
+  <div class="text-center text-sm text-gray-400">
+    © Copyright Charity 2025. Design by <span class="text-white">Abdo samir</span>
+      
+  </div>
+
+  <div class="flex justify-center space-x-4">
+    <a href="#" class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"> <i class="fa-brands fa-facebook-f"></i> </a>
+    <a href="#" class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"> <i class="fa-brands fa-twitter"></i></a>
+    <a href="#" class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"> <i class="fa-brands fa-square-instagram"></i></a>
+  </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

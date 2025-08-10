@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>عطاء - الجمعية الخيرية</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/yourkit.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Responsive Navbar -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-colors duration-300 bg-white text-black "
+    >
+      <nav
+        class="flex items-center justify-between px-4 md:px-8 lg:px-12 w-full "
+      >
+        <img
+          src="image/Untitled-1.png"
+          alt="logo"
+          class="w-12 h-12 md:w-16 md:h-16 lg:w-20 lg:h-20"
+        />
+        <div class="hidden md:flex items-center space-x-8">
+          <a
+            href="index.html"
+            class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >الصفحه الرئيسية</a
+          >
+          <a
+            href="donation.html"
+            class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+          >
+            الحملات</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >عن المنظمة</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-700 hover:text-[#45A21C] hover:border-y hover:py-1 hover:border-green-500 font-medium transition-colors"
+            >اتصل بينا</a
+          >
+        </div>
+        <div class="hidden md:flex space-x-4">
+          <a
+            href="donation.html"
+            class="bg-[#45A21C] hover:bg-[#3b7224] px-5 py-2 rounded-xl text-white text-sm font-medium transition-colors"
+            >انضم الينا</a
+          >
+        </div>
+        <!-- Hamburger -->
+        <button id="nav-toggle" class="md:hidden text-3xl focus:outline-none">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+       <div
+        id="mobile-menu"
+        class="md:hidden fixed top-0 left-0 w-full h-full bg-[#F8F9FA] text-[#45A21C] flex flex-col items-center justify-center space-y-8 text-2xl hidden z-40"
+      >
+        <button id="nav-close" class="absolute top-6 right-8 text-4xl">
+          <i class="bx bx-x"></i>
+        </button>
+        <a href="index.html" class="hover:text-gray-200 transition-colors"
+          >الصفحه الرئيسية</a
+        >
+        <a href="donation.html" class="hover:text-gray-200 transition-colors">
+          الحملات</a
+        >
+        <a href="about.html" class="hover:text-gray-200 transition-colors"
+          >عن المنظمة</a
+        >
+        <a href="contact.html" class="hover:text-gray-200 transition-colors"
+          >اتصل بينا</a
+        >
+        <div class="mt-8">
+          <a
+            href="donation.html"
+            class="bg-[#45A21C] text-white px-6 py-3 rounded-xl font-medium hover:bg-gray-100 transition-colors"
+          >
+            انضم الينا
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section class="container mx-auto my-20 md:my-32 px-4 md:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+        <div class="lg:col-span-2 space-y-6">
+          <!-- العنوان والصورة -->
+          <div class="flex flex-col space-y-6 md:space-y-8">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center md:text-right">سلة غذاء لأسرة فقيرة</h2>
+            <img
+              src="image/joel-muniz-A4Ax1ApccfA-unsplash.jpg"
+              alt="حملة تبرع"
+              class="rounded-md w-full h-48 sm:h-64 md:h-80 lg:h-110 object-cover"
+            />
+          </div>
+
+          <!-- شريط التقدم -->
+          <div class="space-y-4 mx-2 md:mx-5">
+            <div class="w-full bg-gray-200 rounded-full h-3">
+              <div id="progress"
+                class=" progress-bar bg-[#45A21C] h-3 rounded-full"
+                style="width: 0"
+              ></div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-between space-y-4 sm:space-y-0">
+              <div class="flex flex-col space-y-2 text-center sm:text-right">
+                <h4 class="text-base sm:text-lg md:text-xl font-bold">الهدف: 12,000 جنيه</h4>
+                <p class="text-sm text-gray-500">تم جمعه: 8,000 جنيه</p>
+              </div>
+              <div class="flex flex-col items-center space-y-2">
+                <h2 class="text-xl sm:text-2xl font-bold">14</h2>
+                <p class="text-sm text-gray-500">عدد التبرعات</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- مبلغ التبرع -->
+          <div class="shadow-lg rounded-lg mx-2 md:mx-5">
+            <div class="px-4 py-6">
+              <h3 class="font-bold text-xl sm:text-2xl md:text-3xl mb-4 text-center md:text-right">مبلغ التبرع</h3>
+              <div class="mx-auto mt-6 md:mt-10 space-y-4">
+                <!-- المبالغ -->
+                <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 md:gap-3">
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$10</button>
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$50</button>
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$100</button>
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$200</button>
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$400</button>
+                  <button class="amount-btn bg-white text-black border border-gray-400 px-2 sm:px-3 md:px-6 py-2 rounded-full text-sm sm:text-lg md:text-2xl font-medium cursor-pointer hover:bg-[#45A21C] hover:text-white transition-colors">$500</button>
+                </div>
+
+                <!-- حقل إدخال المبلغ -->
+                <input id="donation-input" type="number" placeholder="أدخل المبلغ " 
+                       class="w-full sm:w-2/3 md:w-1/3 bg-slate-100 rounded-full px-3 py-2 focus:outline-none focus:ring-1 focus:ring-[#45A21C] text-center md:text-right">
+              </div>
+            </div>
+
+            <!-- طريقة الدفع -->
+            <div class="px-4 py-6">
+              <h3 class="font-bold text-xl sm:text-2xl md:text-3xl mb-4 text-center md:text-right">حدد طريقة الدفع</h3>
+              <div class="flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 sm:space-x-reverse text-base md:text-lg font-normal py-3">
+                <label class="flex items-center">
+                  <input type="radio" name="payment" class="mr-2 ml-2" /> بطاقة ائتمان
+                </label>
+                <label class="flex items-center">
+                  <input type="radio" name="payment" class="mr-2 rtl:ml-2" />
+                  PayPal
+                </label>
+              </div>
+              <h1 class="font-normal text-base sm:text-lg md:text-xl text-center md:text-right">رقم البطاقة الائتمانية</h1>
+              <input
+                type="text"
+                placeholder="💳"
+                class="w-full sm:w-2/3 md:w-1/2 mt-2 py-2 px-3 text-start bg-gray-50 text-base sm:text-lg md:text-2xl rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+              />
+            </div>
+
+            <!-- معلومات شخصية -->
+            <div class="px-4 py-6">
+              <h3 class="font-bold text-xl sm:text-2xl md:text-3xl mb-4 text-center md:text-right">معلومات شخصية</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <h1 class="font-normal text-base sm:text-lg md:text-xl text-center md:text-right">اسم الأول</h1>
+                  <input
+                    type="text"
+                    placeholder="الاسم الأول"
+                    class="w-full mt-2 py-2 px-3 text-start bg-gray-50 text-sm rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+                  />
+                </div>
+
+                <div>
+                  <h1 class="font-normal text-base sm:text-lg md:text-xl text-center md:text-right">اسم العائلة</h1>
+                  <input
+                    type="text"
+                    placeholder="اسم العائلة"
+                    class="w-full mt-2 py-2 px-3 text-start bg-gray-50 text-sm rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+                  />
+                </div>
+
+                <div class="sm:col-span-2">
+                  <h1 class="font-normal text-base sm:text-lg md:text-xl text-center md:text-right">عنوان البريد الإلكتروني</h1>
+                  <input
+                    type="email"
+                    placeholder="عنوان البريد الإلكتروني"
+                    class="w-full mt-2 py-2 px-3 text-start bg-gray-50 text-sm rounded-lg shadow-sm focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- زر التبرع -->
+            <div class="flex flex-col sm:flex-row justify-between items-center mt-6 px-4 md:px-6 py-6 space-y-4 sm:space-y-0">
+              <div class="text-xl sm:text-2xl md:text-3xl font-bold text-center md:text-right">
+                إجمالي التبرع: <span id="total-amount" class="text-green-600">0</span> دولار
+              </div>
+              <button
+                class="w-full sm:w-auto bg-[#45A21C] text-white px-8 md:px-24 py-3 md:py-2 rounded-md hover:bg-green-700 transition-colors text-lg md:text-base"
+              >
+                تبرع الآن
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="lg:col-span-1 space-y-6 mt-8 lg:mt-20">
+          <!-- بحث -->
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="🔎 ابحث..."
+              class="w-full p-3 md:p-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+            />
+          </div>
+
+          <!-- الفئات -->
+          <div>
+            <h3 class="font-bold mb-4 text-lg sm:text-xl md:text-2xl text-center md:text-right">فئات</h3>
+            <ul class="space-y-2 text-gray-900 font-semibold text-sm md:text-md">
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                كفالة يتيم <span>(3)</span>
+              </li>
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                علاج مرضى السرطان <span>(6)</span>
+              </li>
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                توفير بطاطين للشتاء <span>(6)</span>
+              </li>
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                بناءمساجد <span>(8)</span>
+              </li>
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                تعليم المحتاجين <span>(8)</span>
+              </li>
+              <li class="flex justify-between px-2 py-1 hover:bg-gray-50 rounded cursor-pointer">
+                توفير طعام للفقراء <span>(3)</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- الاشتراك في النشرة -->
+          <div>
+            <h3 class="font-bold mb-4 text-lg sm:text-xl md:text-2xl text-center md:text-right">
+              اشترك في النشرة الإخبارية لدينا
+            </h3>
+            <input
+              type="email"
+              placeholder="أدخل بريدك الإلكتروني"
+              class="w-full p-3 md:p-4 border border-gray-200 rounded-2xl mb-4 focus:outline-none focus:ring-1 focus:ring-[#45A21C]"
+            />
+            <button
+              class="w-full bg-green-600 text-white font-bold py-3 md:py-4 rounded-2xl hover:bg-green-700 transition-colors"
+            >
+              اشترك الآن
+            </button>
+          </div>
+
+          <!-- حالات عاجلة -->
+          <div>
+            <h3 class="font-bold mb-4 text-lg sm:text-xl md:text-2xl text-center md:text-right">حالات عاجلة</h3>
+            <div class="space-y-4">
+              <!-- حالة -->
+              <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-6 sm:pl-10">
+                <img
+                  src="image/images.jpg"
+                  alt="حالة"
+                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-lg object-cover"
+                />
+                <div class="space-y-2 text-center sm:text-right">
+                  <h4 class="font-semibold text-base sm:text-lg md:text-xl">توفير بطاطين للشتاء</h4>
+                  <p class="text-xs sm:text-sm md:text-lg text-gray-500">
+                    نوزع بطاطين وملابس شتوية على الأسر المحتاجة قبل موجات البرد.
+                  </p>
+                  <a href="details.html" class="text-gray-600 hover:border-b transition-colors"
+                    >عرض التفاصيل</a
+                  >
+                </div>
+              </div>
+              <!-- حالة -->
+              <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-6 sm:pl-10">
+                <img
+                  src="image/premium_photo-1661641363232-f991.jpg"
+                  alt="حالة"
+                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-lg object-cover"
+                />
+                <div class="space-y-2 text-center sm:text-right">
+                  <h4 class="font-semibold text-base sm:text-lg md:text-xl">علاج مريض بالسرطان</h4>
+                  <p class="text-xs sm:text-sm md:text-lg text-gray-500">
+                    نساعد في تغطية تكاليف العلاج لطفل يعاني من سرطان الدم ويحتاج
+                    إلى دعم عاجل.
+                  </p>
+                  <a href="details.html" class="text-gray-600 hover:border-b transition-colors"
+                    >عرض التفاصيل</a
+                  >
+                </div>
+              </div>
+              <!-- حالة -->
+              <div class="flex flex-col sm:flex-row items-center sm:items-start space-y-3 sm:space-y-0 sm:space-x-6 sm:pl-10">
+                <img
+                  src="image/premium_photo-1681997135217-4541.jpg"
+                  alt="حالة"
+                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 rounded-lg object-cover"
+                />
+                <div class="space-y-2 text-center sm:text-right">
+                  <h4 class="font-semibold text-base sm:text-lg md:text-xl">كفالة يتيم</h4>
+                  <p class="text-xs sm:text-sm md:text-lg text-gray-500">
+                    نسعى لتوفير احتياجات الأيتام من مأكل وملبس وتعليم في بيئة
+                    آمنة ومحبة.
+                  </p>
+                  <a href="details.html" class="text-gray-600 hover:border-b transition-colors"
+                    >عرض التفاصيل</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section
+      class="flex flex-col items-start justify-start text-start space-y-4 mx-4 md:mx-6 my-12 md:my-16 px-4 md:px-6 py-6 w-full lg:w-1/2"
+    >
+      <div class="space-y-3">
+        <h2 class="font-bold text-xl sm:text-2xl md:text-3xl text-center md:text-right">دعم المحتاجين... مسؤوليتنا جميعًا</h2>
+        <p class="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-right">
+          نحن في جمعية عَطاء نؤمن أن الخير لا يُقاس بحجمه، بل بصدقه، وأن كل
+          مساهمة - مهما بدت بسيطة - قد تغيّر حياة إنسان بالكامل. لذلك، نسعى إلى
+          الوصول للمحتاجين في القرى والأحياء الأكثر فقرًا، نمد إليهم يد العون،
+          ونستمع لهم قبل أن نعطيهم، لأننا نؤمن أن الكرامة لا تُمنح فقط
+          بالمساعدة، بل بالاحترام والاحتواء.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <h2 class="font-bold text-xl sm:text-2xl md:text-3xl text-center md:text-right">علاج مريض بالسرطان</h2>
+        <p class="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-right">
+          السرطان ليس مجرد مرض، بل معركة يومية يخوضها آلاف المرضى في صمت وألم.
+          ومع ارتفاع تكاليف العلاج، يصبح الأمل في الشفاء بعيدًا عن متناول كثير
+          من الأسر البسيطة. في "عَطاء"، نؤمن أن لكل إنسان حقًا في الحياة الكريمة
+          والعلاج العادل، لذلك نضع دعم مرضى السرطان ضمن أولوياتنا. نحن نعمل على
+          جمع التبرعات لتغطية تكاليف الجلسات العلاجية، والأدوية، والفحوصات، وحتى
+          الدعم النفسي الذي لا يقل أهمية. كل تبرع تقدمه اليوم، قد يكون سببًا في
+          إنقاذ حياة، وعودة الابتسامة لأسرة فقدت الأمل. مريض السرطان لا يحتاج
+          فقط إلى دواء، بل إلى من يقول له: "أنت مش لوحدك، وإحنا جنبك". ساهم معنا
+          في علاج مريض بالسرطان، وكن جزءًا من قصة شفاء حقيقية.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <h2 class="font-bold text-xl sm:text-2xl md:text-3xl text-center md:text-right">كفالة يتيم</h2>
+        <p class="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-right">
+          اليتيم لا يحتاج فقط إلى طعام أو ملبس، بل إلى من يعوضه حنانًا افتقده،
+          وسندًا يشعره بالأمان. في "عَطاء"، نؤمن أن كفالة اليتيم ليست مجرد
+          مساعدة مالية، بل رسالة رحمة ومشاركة في بناء إنسان قادر على مواجهة
+          الحياة.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <img
+          src="image/aman-shrivastava-w6caoaJzXIE-unsplash.jpg"
+          alt=""
+          class="rounded-lg w-full h-48 sm:h-64 md:h-80 lg:h-110 object-cover"
+        />
+        <p class="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-right">
+          اليتيم لا يحتاج فقط إلى طعام أو ملبس، بل إلى من يعوضه حنانًا افتقده،
+          وسندًا يشعره بالأمان. في "عَطاء"، نؤمن أن كفالة اليتيم ليست مجرد
+          مساعدة مالية، بل رسالة رحمة ومشاركة في بناء إنسان قادر على مواجهة
+          الحياة.
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <ul class="list-disc space-y-2 text-sm sm:text-base md:text-lg text-center md:text-right pl-4 md:pl-0">
+          <li>
+            اليتيم لا يحتاج فقط إلى طعام أو ملبس، بل إلى من يعوضه حنانًا افتقده،
+            وسندًا يشعره بالأمان. في "عَطاء"، نؤمن أن كفالة اليتيم ليست مجرد
+            مساعدة مالية، بل رسالة رحمة ومشاركة في بناء إنسان قادر على مواجهة
+            الحياة.
+          </li>
+          <li>لذلك نوفر عبر منصتنا:</li>
+          <li>
+            كفالة شهرية لتغطية احتياجات الطفل الأساسية (غذاء – تعليم – رعاية
+            صحية).
+          </li>
+          <li>متابعة مستمرة لحالة اليتيم من خلال فرق متخصصة.</li>
+          <li>توفير الدعم النفسي والاجتماعي له ولأسرته.</li>
+          <li>فرص تعليمية وتربوية تساعده على النمو في بيئة آمنة وكريمة.</li>
+          <li>
+            كن الكتف اللي يتسند عليه طفل فقد أباه، وساهم في صناعة مستقبل أفضل له
+            من خلال كفالة تليق بكرامته وإنسانيته.
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-y-3">
+        <h2 class="font-bold text-xl sm:text-2xl md:text-3xl text-center md:text-right">دعم الأَجْيَن... ردّ جميل الماضي</h2>
+        <p class="text-gray-500 text-sm sm:text-base md:text-lg text-center md:text-right">
+          كبار السن هم أهلنا، آباؤنا وأمهاتنا، من أفنوا أعمارهم في بناء الأجيال
+          وخدمة المجتمع. ومع مرور الزمن، وغياب الأبناء أو ضعف الموارد، يجد
+          الكثير منهم أنفسهم في عزلة، يفتقرون إلى الرعاية الصحية، أو المساعدة
+          اليومية، أو حتى كلمة طيبة. في "عَطاء"، نضع دعم الأَجْيَن في مقدمة
+          أعمالنا الخيرية، لأننا نؤمن أن من أعطى الكثير، يستحق أن نرد له الجميل.
+        </p>
+      </div>
+    </section>
+
+    <footer class="bg-black text-white py-8 md:py-10">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 text-center md:text-right"
+      >
+        <!-- About Section -->
+        <div class="mb-6 md:mb-0">
+          <img
+            src="image/Untitled-1.png"
+            alt=""
+            class="w-16 h-16 md:w-20 md:h-20 mx-auto md:mx-0 mb-4"
+          />
+          <p class="text-sm leading-relaxed">
+            الجمعية الخيرية "عطاء"<br />
+            نحن نسعى لإحداث أثر حقيقي في حياة المحتاجين من خلال التبرعات والعمل
+            التطوعي.
+          </p>
+          <p class="mt-4 text-sm">
+            📞 الهاتف: 0000-000-0100<br />
+            📍 العنوان: القاهرة، مصر
+          </p>
+        </div>
+
+        <!-- من نحن -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-4">من نحن</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="donation.html" class="hover:underline transition-colors"
+                >الحملات</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors"
+                >المتطوعين</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors">رؤيتنا</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors"
+                >الأسئلة الشائعة</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors">الأخبار</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- روابط سريعة -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-4">روابط سريعة</h3>
+          <ul class="space-y-2 text-sm">
+            <li>
+              <a href="#" class="hover:underline transition-colors"
+                >سياسة الخصوصية</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors"
+                >الشروط والأحكام</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors">التقارير</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors">الخدمات</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline transition-colors"
+                >المشاريع القادمة</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- الحالات المصورة -->
+        <div class="mb-6 md:mb-0">
+          <h3 class="text-lg font-semibold mb-4">الحالات المصورة</h3>
+          <div class="grid grid-cols-3 gap-2 justify-center">
+            <img
+              src="image/close-up-of-people-arranging-ite.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+            <img
+              src="image/close-up-of-female-hands-holding.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+            <img
+              src="image/joel-muniz-A4Ax1ApccfA-unsplash.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+            <img
+              src="image/premium_photo-1661962420671-9fcd.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+            <img
+              src="image/premium_photo-1663047044538-399e.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+            <img
+              src="image/images.jpg"
+              class="w-full h-12 md:h-16 object-cover rounded"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div
+        class="flex flex-col md:flex-row justify-between items-center mt-8 md:mt-10 px-4 md:px-16 py-6 md:py-10 gap-4"
+      >
+        <div class="text-center text-sm text-gray-400">
+          © Copyright Charity 2025. Design by
+          <span class="text-white">Abdo samir</span>
+        </div>
+
+        <div class="flex justify-center space-x-4">
+          <a
+            href="#"
+            class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a
+            href="#"
+            class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"
+          >
+            <i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="#"
+            class="bg-white rounded-full text-black px-2 py-1 hover:bg-gray-100 transition-colors"
+          >
+            <i class="fa-brands fa-square-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
